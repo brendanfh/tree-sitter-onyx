@@ -98,22 +98,19 @@ const list1 = (sep, rule) => seq(rule, repeat(seq(sep, rule)));
 module.exports = grammar({
   name: "onyx",
   extras: ($) => [$.comment, /[ \t]/],
-  inline: ($) => [$._type, $.package_clause, $.string_literal],
+  inline: ($) => [$._type],
   word: ($) => $.identifier,
   conflicts: ($) => [[$.parameter, $.quick_function_definition]],
 
   rules: {
     source_file: ($) =>
-      seq(
-        alias(optional($.package_clause), $.package_declaration),
-        list(terminator, optional($._top)),
-      ),
+      seq(optional($.package_clause), list(terminator, optional($._top))),
 
     package_clause: ($) =>
       seq(
         optional(field("docs", $.doc_comment)),
         alias("package", $.keyword),
-        field("name", $._identifier_list),
+        field("name", $.identifier_list),
       ),
 
     _top: ($) =>
@@ -124,10 +121,12 @@ module.exports = grammar({
       prec.right(
         seq(
           alias("use", $.keyword),
-          $._identifier_list,
+          field("package_name", $.identifier_list),
           optional($._use_stmt_body),
         ),
       ),
+
+    identifier_list: ($) => $._identifier_list,
 
     _use_stmt_body: ($) =>
       seq(
@@ -281,12 +280,10 @@ module.exports = grammar({
         repeat(alias($._struct_directives, $.compiler_directive)),
         optional("\n"),
         "{",
-        optional(terminator),
         list(
           terminator,
-          choice($.binding_declaration, $.struct_field_declaration),
+          optional(choice($.binding_declaration, $.struct_field_declaration)),
         ),
-        optional(terminator),
         "}",
       ),
 
@@ -300,7 +297,7 @@ module.exports = grammar({
 
     struct_field_declaration: ($) =>
       seq(
-        optional("use"),
+        optional(alias("use", $.keyword)),
         list1(",", field("name", $.identifier)),
         alias(":", $.operator),
         choice(
@@ -319,12 +316,10 @@ module.exports = grammar({
         optional(field("parameters", $.parameter_list)),
         optional("\n"),
         "{",
-        optional(terminator),
         list(
           terminator,
-          choice($.binding_declaration, $.union_field_declaration),
+          optional(choice($.binding_declaration, $.union_field_declaration)),
         ),
-        optional(terminator),
         "}",
       ),
 
@@ -343,9 +338,7 @@ module.exports = grammar({
         optional(seq("(", field("backing_type", $.identifier), ")")),
         optional("\n"),
         "{",
-        optional(terminator),
-        list(terminator, $.enum_value_declaration),
-        optional(terminator),
+        list(terminator, optional($.enum_value_declaration)),
         "}",
       ),
 
@@ -363,7 +356,7 @@ module.exports = grammar({
     parameter: ($) =>
       prec.left(
         seq(
-          field("is_used", optional("use")),
+          field("is_used", optional(alias("use", $.keyword))),
           optional(field("baked", "$")),
           list1(",", field("name", $.identifier)),
           ":",
@@ -472,15 +465,25 @@ module.exports = grammar({
           alias("if", $.keyword),
           optional(seq(field("initializer", $._statement), ";")),
           field("condition", $._expression),
+          optional("\n"),
           field("if_true", $.block),
           repeat(
             seq(
+              optional("\n"),
               alias("elseif", $.keyword),
               field("condition", $._expression),
+              optional("\n"),
               $.block,
             ),
           ),
-          optional(seq(alias("else", $.keyword), field("if_false", $.block))),
+          optional("\n"),
+          optional(
+            seq(
+              alias("else", $.keyword),
+              optional("\n"),
+              field("if_false", $.block),
+            ),
+          ),
         ),
       ),
 
@@ -611,7 +614,8 @@ module.exports = grammar({
 
     argument: ($) => seq(optional(seq($.identifier, "=")), $._expression),
 
-    argument_list: ($) => seq("(", list(partial_terminator, $.argument), ")"),
+    argument_list: ($) =>
+      seq("(", list(partial_terminator, optional($.argument)), ")"),
 
     code_block: ($) =>
       prec.right(
