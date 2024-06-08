@@ -226,6 +226,7 @@ module.exports = grammar({
 
     _top_level_binding_declaration: ($) =>
       seq(
+        repeat($.doc_comment),
         repeat($.tag),
         prec.right(
           1,

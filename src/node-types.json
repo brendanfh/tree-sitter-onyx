@@ -3112,6 +3112,10 @@
       "required": true,
       "types": [
         {
+          "type": "doc_comment",
+          "named": true
+        },
+        {
           "type": "operator",
           "named": true
         },

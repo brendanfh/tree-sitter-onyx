@@ -633,6 +633,13 @@
           "type": "REPEAT",
           "content": {
             "type": "SYMBOL",
+            "name": "doc_comment"
+          }
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
             "name": "tag"
           }
         },
