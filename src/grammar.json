@@ -920,14 +920,6 @@
                 },
                 {
                   "type": "STRING",
-                  "value": "str"
-                },
-                {
-                  "type": "STRING",
-                  "value": "cstr"
-                },
-                {
-                  "type": "STRING",
                   "value": "i8"
                 },
                 {
@@ -973,6 +965,26 @@
                 {
                   "type": "STRING",
                   "value": "void"
+                },
+                {
+                  "type": "STRING",
+                  "value": "any"
+                },
+                {
+                  "type": "STRING",
+                  "value": "package_id"
+                },
+                {
+                  "type": "STRING",
+                  "value": "str"
+                },
+                {
+                  "type": "STRING",
+                  "value": "cstr"
+                },
+                {
+                  "type": "STRING",
+                  "value": "dyn_str"
                 }
               ]
             },
@@ -2303,6 +2315,37 @@
         ]
       }
     },
+    "macro_definition": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "STRING",
+            "value": "macro"
+          },
+          "named": true,
+          "value": "keyword"
+        },
+        {
+          "type": "FIELD",
+          "name": "template",
+          "content": {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "function_definition"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "quick_function_definition"
+              }
+            ]
+          }
+        }
+      ]
+    },
     "_curly_block": {
       "type": "SEQ",
       "members": [
@@ -3555,6 +3598,10 @@
               {
                 "type": "SYMBOL",
                 "name": "function_definition"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "macro_definition"
               },
               {
                 "type": "SYMBOL",

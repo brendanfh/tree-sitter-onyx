@@ -100,6 +100,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -299,6 +303,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -544,6 +552,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -762,6 +774,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -961,6 +977,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -1179,6 +1199,10 @@
           "named": true
         },
         {
+          "type": "macro_definition",
+          "named": true
+        },
+        {
           "type": "method_call",
           "named": true
         },
@@ -1393,6 +1417,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -1592,6 +1620,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -1810,6 +1842,10 @@
           "named": true
         },
         {
+          "type": "macro_definition",
+          "named": true
+        },
+        {
           "type": "method_call",
           "named": true
         },
@@ -2006,6 +2042,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -2208,6 +2248,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -2433,6 +2477,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -2642,6 +2690,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -2873,6 +2925,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -3072,6 +3128,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -3297,6 +3357,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -3519,6 +3583,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -3737,6 +3805,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -3936,6 +4008,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -4185,6 +4261,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -4411,6 +4491,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -4610,6 +4694,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -4869,6 +4957,10 @@
         },
         {
           "type": "int_literal",
+          "named": true
+        },
+        {
+          "type": "macro_definition",
           "named": true
         },
         {
@@ -5107,6 +5199,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -5316,6 +5412,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -5535,6 +5635,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -5731,6 +5835,10 @@
         },
         {
           "type": "keyword",
+          "named": true
+        },
+        {
+          "type": "macro_definition",
           "named": true
         },
         {
@@ -5933,6 +6041,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -6132,6 +6244,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -6344,6 +6460,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -6566,6 +6686,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -6802,6 +6926,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -7001,6 +7129,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -7223,6 +7355,10 @@
           "named": true
         },
         {
+          "type": "macro_definition",
+          "named": true
+        },
+        {
           "type": "method_call",
           "named": true
         },
@@ -7419,6 +7555,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -7621,6 +7761,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -7836,6 +7980,10 @@
         },
         {
           "type": "int_literal",
+          "named": true
+        },
+        {
+          "type": "macro_definition",
           "named": true
         },
         {
@@ -8038,6 +8186,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -8237,6 +8389,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -8452,6 +8608,10 @@
         },
         {
           "type": "int_literal",
+          "named": true
+        },
+        {
+          "type": "macro_definition",
           "named": true
         },
         {
@@ -8669,6 +8829,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -8868,6 +9032,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -9113,6 +9281,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -9312,6 +9484,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -9541,6 +9717,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -9740,6 +9920,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -10006,6 +10190,10 @@
           "named": true
         },
         {
+          "type": "macro_definition",
+          "named": true
+        },
+        {
           "type": "method_call",
           "named": true
         },
@@ -10221,6 +10409,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -10430,6 +10622,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -10672,6 +10868,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -10932,6 +11132,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -11131,6 +11335,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -11380,6 +11588,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -11588,6 +11800,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -11787,6 +12003,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -12005,6 +12225,10 @@
           "named": true
         },
         {
+          "type": "macro_definition",
+          "named": true
+        },
+        {
           "type": "method_call",
           "named": true
         },
@@ -12201,6 +12425,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -12403,6 +12631,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -12628,6 +12860,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -12837,6 +13073,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -13063,6 +13303,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -13272,6 +13516,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -13494,6 +13742,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -13745,6 +13997,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -13944,6 +14200,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -14206,6 +14466,10 @@
           "named": true
         },
         {
+          "type": "macro_definition",
+          "named": true
+        },
+        {
           "type": "method_call",
           "named": true
         },
@@ -14459,6 +14723,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -14658,6 +14926,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -14907,6 +15179,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -15106,6 +15382,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -15346,6 +15626,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -15548,6 +15832,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -15747,6 +16035,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -16036,6 +16328,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -16294,6 +16590,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -16493,6 +16793,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -16711,6 +17015,10 @@
           "named": true
         },
         {
+          "type": "macro_definition",
+          "named": true
+        },
+        {
           "type": "method_call",
           "named": true
         },
@@ -16907,6 +17215,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -17109,6 +17421,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -17334,6 +17650,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -17526,6 +17846,10 @@
         },
         {
           "type": "int_literal",
+          "named": true
+        },
+        {
+          "type": "macro_definition",
           "named": true
         },
         {
@@ -17728,6 +18052,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -17927,6 +18255,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -18145,6 +18477,10 @@
           "named": true
         },
         {
+          "type": "macro_definition",
+          "named": true
+        },
+        {
           "type": "method_call",
           "named": true
         },
@@ -18238,6 +18574,36 @@
         },
         {
           "type": "untyped_struct_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "macro_definition",
+    "named": true,
+    "fields": {
+      "template": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "function_definition",
+            "named": true
+          },
+          {
+            "type": "quick_function_definition",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "keyword",
           "named": true
         }
       ]
@@ -18402,6 +18768,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -18604,6 +18974,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -18863,6 +19237,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -19062,6 +19440,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -19329,6 +19711,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -19528,6 +19914,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -19773,6 +20163,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -19972,6 +20366,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -20219,6 +20617,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -20418,6 +20820,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -20640,6 +21046,10 @@
           "named": true
         },
         {
+          "type": "macro_definition",
+          "named": true
+        },
+        {
           "type": "method_call",
           "named": true
         },
@@ -20836,6 +21246,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -21038,6 +21452,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -21280,6 +21698,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -21563,6 +21985,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -21762,6 +22188,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -22011,6 +22441,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -22210,6 +22644,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -22477,6 +22915,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -22676,6 +23118,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -22894,6 +23340,10 @@
           "named": true
         },
         {
+          "type": "macro_definition",
+          "named": true
+        },
+        {
           "type": "method_call",
           "named": true
         },
@@ -23090,6 +23540,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -23302,6 +23756,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -23571,6 +24029,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -23806,6 +24268,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -24027,6 +24493,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -24236,6 +24706,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -24505,6 +24979,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -24743,6 +25221,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -24961,6 +25443,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -25160,6 +25646,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -25378,6 +25868,10 @@
           "named": true
         },
         {
+          "type": "macro_definition",
+          "named": true
+        },
+        {
           "type": "method_call",
           "named": true
         },
@@ -25574,6 +26068,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -25776,6 +26274,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -25994,6 +26496,10 @@
           "named": true
         },
         {
+          "type": "macro_definition",
+          "named": true
+        },
+        {
           "type": "method_call",
           "named": true
         },
@@ -26208,6 +26714,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -26407,6 +26917,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -26666,6 +27180,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -26922,6 +27440,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -27121,6 +27643,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -27339,6 +27865,10 @@
           "named": true
         },
         {
+          "type": "macro_definition",
+          "named": true
+        },
+        {
           "type": "method_call",
           "named": true
         },
@@ -27535,6 +28065,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -27737,6 +28271,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -27956,6 +28494,10 @@
         },
         {
           "type": "int_literal",
+          "named": true
+        },
+        {
+          "type": "macro_definition",
           "named": true
         },
         {
@@ -28196,6 +28738,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -28408,6 +28954,10 @@
             "named": true
           },
           {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
             "type": "method_call",
             "named": true
           },
@@ -28607,6 +29157,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {
@@ -28873,6 +29427,10 @@
           },
           {
             "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
             "named": true
           },
           {

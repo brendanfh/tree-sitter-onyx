@@ -9,8 +9,6 @@ const special_operators = ["|>", "??"],
   builtin_types = [
     "type_expr",
     "rawptr",
-    "str",
-    "cstr",
     "i8",
     "i16",
     "i32",
@@ -23,6 +21,11 @@ const special_operators = ["|>", "??"],
     "f64",
     "bool",
     "void",
+    "any",
+    "package_id",
+    "str",
+    "cstr",
+    "dyn_str",
   ],
   op_prec = {
     control_flow: 11,
@@ -450,6 +453,15 @@ module.exports = grammar({
         ),
       ),
 
+    macro_definition: ($) =>
+      seq(
+        alias("macro", $.keyword),
+        field(
+          "template",
+          choice($.function_definition, $.quick_function_definition),
+        ),
+      ),
+
     _curly_block: ($) =>
       seq("{", list(terminator, optional($._statement)), "}"),
 
@@ -627,6 +639,7 @@ module.exports = grammar({
             $.untyped_array_literal,
             $.quick_function_definition,
             $.function_definition,
+            $.macro_definition,
             $.code_block,
             $._type_in_expression,
             $.sizeof_expression,
