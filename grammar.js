@@ -460,6 +460,7 @@ module.exports = grammar({
       choice(
         $.block,
         $.declaration,
+        $.assignment,
         $.if_statement,
         $.while_statement,
         $.for_statement,
@@ -490,6 +491,15 @@ module.exports = grammar({
               field("value", $._expression),
             ),
           ),
+        ),
+      ),
+
+    assignment: ($) =>
+      prec.left(
+        seq(
+          field("lvalue", list1(",", $._factor)),
+          choice(...assignment_operators.map((x) => alias(x, $.operator))),
+          field("rvalue", list1(",", $._expression)),
         ),
       ),
 
@@ -577,7 +587,10 @@ module.exports = grammar({
               ),
             ),
           ),
-          field("body", $.block),
+          choice(
+            field("expr", seq("=>", $._expression)),
+            field("body", $.block),
+          ),
         ),
       ),
 
@@ -620,6 +633,8 @@ module.exports = grammar({
             $.alignof_expression,
             $.cast_expression,
             $._directive_expression,
+            alias($.switch_statement, $.switch_expression),
+            $.do_expression,
             alias(seq("$", $.identifier), $.polymorphic_variable),
             seq("(", $._expression, ")"),
           ),
@@ -731,6 +746,16 @@ module.exports = grammar({
 
     untyped_array_literal: ($) =>
       seq(".[", list(partial_terminator, optional($._expression)), "]"),
+
+    do_expression: ($) =>
+      prec.left(
+        12,
+        seq(
+          alias("do", $.keyword),
+          optional(seq("->", field("type", $._type))),
+          field("body", alias($._curly_block, $.block)),
+        ),
+      ),
 
     binary_expression: ($) => {
       const table = [
