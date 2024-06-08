@@ -110,7 +110,7 @@
           "name": "name",
           "content": {
             "type": "SYMBOL",
-            "name": "_identifier_list"
+            "name": "identifier_list"
           }
         }
       ]

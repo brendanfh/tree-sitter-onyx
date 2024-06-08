@@ -12937,15 +12937,11 @@
         ]
       },
       "name": {
-        "multiple": true,
+        "multiple": false,
         "required": true,
         "types": [
           {
-            "type": ".",
-            "named": false
-          },
-          {
-            "type": "identifier",
+            "type": "identifier_list",
             "named": true
           }
         ]
