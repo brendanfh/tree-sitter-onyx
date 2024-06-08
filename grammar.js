@@ -192,7 +192,10 @@ module.exports = grammar({
       ),
 
     _top_level_declaration: ($) =>
-      choice($.global_declaration, $.binding_declaration),
+      choice(
+        $.global_declaration,
+        alias($._top_level_binding_declaration, $.binding_declaration),
+      ),
 
     global_declaration: ($) =>
       seq(
@@ -215,9 +218,21 @@ module.exports = grammar({
         ),
       ),
 
-    binding_declaration: ($) =>
+    _top_level_binding_declaration: ($) =>
       seq(
         repeat($.tag),
+        prec.right(
+          1,
+          seq(
+            field("name", alias($._non_proc_type, $.const_identifier)),
+            alias("::", $.operator),
+            field("value", $._expression),
+          ),
+        ),
+      ),
+
+    binding_declaration: ($) =>
+      seq(
         prec.right(
           1,
           seq(
@@ -245,13 +260,12 @@ module.exports = grammar({
         field("return_type", $._type),
       ),
 
-    _non_proc_type: ($) =>
+    _type_in_expression: ($) =>
       prec.right(
         1,
         choice(
-          $.identifier,
+          seq(alias("#type", $.compiler_directive), $._type),
           alias(choice(...builtin_types), $.type_identifier),
-          alias(seq("&", $._type), $.pointer_type),
           alias(seq("[]", $._type), $.slice_type),
           alias(seq("[&]", $._type), $.multi_pointer_type),
           alias(seq("[..]", $._type), $.dynamic_array_type),
@@ -263,13 +277,34 @@ module.exports = grammar({
           seq(
             "$",
             alias($.identifier, $.polymorphic_variable),
-            optional(seq("/", $._expression)),
+            optional(seq("/", $._factor)),
           ),
           alias(seq("typeof", field("expr", $._expression)), $.typeof_type),
           alias("#Self", $.compiler_directive),
           $.struct_type,
           $.union_type,
           $.enum_type,
+        ),
+      ),
+
+    _non_proc_type: ($) =>
+      prec.right(
+        1,
+        choice(
+          seq(
+            $.identifier,
+            prec.right(
+              12,
+              repeat(
+                choice(
+                  alias($.argument_list, $.poly_call_type),
+                  alias(seq(".", $.identifier), $.selector),
+                ),
+              ),
+            ),
+          ),
+          $._type_in_expression,
+          alias(seq("&", $._type), $.pointer_type),
         ),
       ),
 
@@ -530,7 +565,7 @@ module.exports = grammar({
             $.function_definition,
             $.code_block,
             seq(alias("#type", $.compiler_directive), $._type),
-            $._type,
+            $._type_in_expression,
             $.sizeof_expression,
             $.alignof_expression,
             $.cast_expression,
@@ -621,7 +656,9 @@ module.exports = grammar({
       prec.right(
         6,
         seq(
-          choice("[]", seq("[", list(partial_terminator, $.identifier), "]")),
+          choice(
+            seq("[", list(partial_terminator, optional($.identifier)), "]"),
+          ),
           optional("\n"),
           choice(
             seq(alias($._curly_block, $.block)),
