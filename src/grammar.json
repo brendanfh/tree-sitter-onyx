@@ -1419,6 +1419,13 @@
       "type": "SEQ",
       "members": [
         {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "tag"
+          }
+        },
+        {
           "type": "CHOICE",
           "members": [
             {
@@ -1659,6 +1666,13 @@
     "union_field_declaration": {
       "type": "SEQ",
       "members": [
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "tag"
+          }
+        },
         {
           "type": "FIELD",
           "name": "name",

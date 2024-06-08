@@ -338,6 +338,7 @@ module.exports = grammar({
 
     struct_field_declaration: ($) =>
       seq(
+        repeat($.tag),
         optional(alias("use", $.keyword)),
         list1(",", field("name", $.identifier)),
         alias(":", $.operator),
@@ -366,6 +367,7 @@ module.exports = grammar({
 
     union_field_declaration: ($) =>
       seq(
+        repeat($.tag),
         field("name", $.identifier),
         optional(seq("as", field("encoding", $.int_literal))),
         alias(":", $.operator),

@@ -17458,6 +17458,10 @@
         {
           "type": "operator",
           "named": true
+        },
+        {
+          "type": "tag",
+          "named": true
         }
       ]
     }
@@ -19774,11 +19778,15 @@
       }
     },
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": true,
       "types": [
         {
           "type": "operator",
+          "named": true
+        },
+        {
+          "type": "tag",
           "named": true
         }
       ]
