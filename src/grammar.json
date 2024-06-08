@@ -9,8 +9,20 @@
           "type": "CHOICE",
           "members": [
             {
-              "type": "SYMBOL",
-              "name": "package_clause"
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "REPEAT",
+                  "content": {
+                    "type": "STRING",
+                    "value": "\n"
+                  }
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "package_clause"
+                }
+              ]
             },
             {
               "type": "BLANK"
@@ -5310,6 +5322,9 @@
     [
       "parameter",
       "quick_function_definition"
+    ],
+    [
+      "source_file"
     ]
   ],
   "precedences": [],

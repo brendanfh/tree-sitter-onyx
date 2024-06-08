@@ -100,11 +100,17 @@ module.exports = grammar({
   extras: ($) => [$.comment, /[ \t]/],
   inline: ($) => [$._type],
   word: ($) => $.identifier,
-  conflicts: ($) => [[$.parameter, $.quick_function_definition]],
+  conflicts: ($) => [
+    [$.parameter, $.quick_function_definition],
+    [$.source_file],
+  ],
 
   rules: {
     source_file: ($) =>
-      seq(optional($.package_clause), list(terminator, optional($._top))),
+      seq(
+        optional(seq(repeat("\n"), $.package_clause)),
+        list(terminator, optional($._top)),
+      ),
 
     package_clause: ($) =>
       seq(
