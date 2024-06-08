@@ -462,6 +462,9 @@ module.exports = grammar({
         $.declaration,
         $.if_statement,
         $.while_statement,
+        $.for_statement,
+        $.switch_statement,
+        $.case_statement,
         $.break_statement,
         $.continue_statement,
         $.fallthrough_statement,
@@ -535,9 +538,45 @@ module.exports = grammar({
       prec.right(
         seq(
           alias("while", $.keyword),
-          optional(seq(field("initializer", $._statement))),
+          optional(seq(field("initializer", $._statement), ";")),
           optional(alias("defer", $.keyword)),
           field("condition", $._expression),
+          field("body", $.block),
+        ),
+      ),
+
+    for_statement: ($) =>
+      prec.right(
+        seq(
+          alias("for", $.keyword),
+          field("values", $.identifier_list),
+          alias("in", $.keyword),
+          field("iter", $._expression),
+          field("body", $.block),
+        ),
+      ),
+    switch_statement: ($) =>
+      prec.right(
+        seq(
+          alias("switch", $.keyword),
+          optional(seq(field("initializer", $._statement), ";")),
+          field("value", $._expression),
+          field("body", $.block),
+        ),
+      ),
+    case_statement: ($) =>
+      prec.right(
+        seq(
+          alias("case", $.keyword),
+          list1(
+            ",",
+            seq(
+              $._expression,
+              optional(
+                seq(alias("as", $.keyword), optional("&"), $.identifier),
+              ),
+            ),
+          ),
           field("body", $.block),
         ),
       ),
@@ -570,10 +609,12 @@ module.exports = grammar({
             $.float_literal,
             $.char_literal,
             $.identifier,
+            $.unary_selector,
+            $.untyped_struct_literal,
+            $.untyped_array_literal,
             $.quick_function_definition,
             $.function_definition,
             $.code_block,
-            seq(alias("#type", $.compiler_directive), $._type),
             $._type_in_expression,
             $.sizeof_expression,
             $.alignof_expression,
@@ -603,6 +644,8 @@ module.exports = grammar({
                 ),
                 alias($.argument_list, $.proc_call),
                 alias(/!\{[^}]*\}/, $.proc_macro_body),
+                $.untyped_struct_literal,
+                $.untyped_array_literal,
               ),
             ),
           ),
@@ -661,6 +704,8 @@ module.exports = grammar({
     argument_list: ($) =>
       seq("(", list(partial_terminator, optional($.argument)), ")"),
 
+    unary_selector: ($) => seq(".", $.identifier),
+
     code_block: ($) =>
       prec.right(
         6,
@@ -675,6 +720,17 @@ module.exports = grammar({
           ),
         ),
       ),
+
+    untyped_struct_literal: ($) =>
+      seq(
+        ".{",
+        optional(seq("..", $._expression, partial_terminator)),
+        list(partial_terminator, optional($.argument)),
+        "}",
+      ),
+
+    untyped_array_literal: ($) =>
+      seq(".[", list(partial_terminator, optional($._expression)), "]"),
 
     binary_expression: ($) => {
       const table = [
