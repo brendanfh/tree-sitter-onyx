@@ -107,6 +107,7 @@ module.exports = grammar({
     [$.parameter, $.quick_function_definition],
     [$.source_file],
   ],
+  externals: ($) => [$.multi_line_string],
 
   rules: {
     source_file: ($) =>
@@ -422,7 +423,27 @@ module.exports = grammar({
       prec.left(
         seq(
           $.parameter_list,
-          optional(seq("->", alias($._type, $.return_type))),
+          optional(
+            seq(
+              "->",
+              choice(
+                alias($._type, $.return_type),
+                seq(
+                  "(",
+                  repeat1(
+                    prec.left(
+                      12,
+                      seq(
+                        optional(seq($.identifier, ":")),
+                        alias($._type, $.return_type),
+                      ),
+                    ),
+                  ),
+                  ")",
+                ),
+              ),
+            ),
+          ),
         ),
       ),
 
@@ -466,7 +487,11 @@ module.exports = grammar({
       seq("{", list(terminator, optional($._statement)), "}"),
 
     block: ($) =>
-      choice(alias($._curly_block, $.block), seq("do", $._statement), "---"),
+      choice(
+        alias($._curly_block, $.block),
+        seq(alias("do", $.keyword), $._statement),
+        "---",
+      ),
 
     _statement: ($) =>
       choice(
@@ -810,12 +835,15 @@ module.exports = grammar({
     int_literal: ($) => token(intLiteral),
 
     string_literal: ($) =>
-      seq(
-        '"',
-        repeat(
-          choice(token.immediate(prec(1, /[^"\n\\]+/)), $.escape_sequence),
+      choice(
+        $.multi_line_string,
+        seq(
+          '"',
+          repeat(
+            choice(token.immediate(prec(1, /[^"\n\\]+/)), $.escape_sequence),
+          ),
+          '"',
         ),
-        '"',
       ),
     char_literal: ($) =>
       seq(

@@ -4960,6 +4960,10 @@
           "named": true
         },
         {
+          "type": "keyword",
+          "named": true
+        },
+        {
           "type": "macro_definition",
           "named": true
         },
@@ -14466,6 +14470,10 @@
           "named": true
         },
         {
+          "type": "keyword",
+          "named": true
+        },
+        {
           "type": "macro_definition",
           "named": true
         },
@@ -14611,6 +14619,10 @@
       "multiple": true,
       "required": true,
       "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
         {
           "type": "parameter_list",
           "named": true
@@ -21879,6 +21891,10 @@
       "types": [
         {
           "type": "escape_sequence",
+          "named": true
+        },
+        {
+          "type": "multi_line_string",
           "named": true
         }
       ]
@@ -29716,10 +29732,6 @@
     "named": true
   },
   {
-    "type": "do",
-    "named": false
-  },
-  {
     "type": "dynamic_array_type",
     "named": true
   },
@@ -29782,6 +29794,10 @@
   {
     "type": "load_path",
     "named": false
+  },
+  {
+    "type": "multi_line_string",
+    "named": true
   },
   {
     "type": "multi_pointer_type",
