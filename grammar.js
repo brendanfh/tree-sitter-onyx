@@ -169,6 +169,8 @@ module.exports = grammar({
         $.js_directive,
         $.overload_directive,
         $.operator_directive,
+        $.if_directive,
+        $.scope_directive,
         $.init_declaration,
         $.foreign_block_declaration,
       ),
@@ -242,6 +244,34 @@ module.exports = grammar({
         field("overload", $._expression),
       ),
 
+    if_directive: ($) =>
+      seq(
+        alias("#if", $.compiler_directive),
+        field("condition", $._expression),
+        "{",
+        list(terminator, optional($._top)),
+        "}",
+        optional(
+          seq(
+            alias("else", $.keyword),
+            "{",
+            list(terminator, optional($._top)),
+            "}",
+          ),
+        ),
+      ),
+
+    scope_directive: ($) =>
+      seq(
+        choice(
+          alias("#local", $.compiler_directive),
+          alias("#package", $.compiler_directive),
+        ),
+        "{",
+        list(terminator, optional($._top)),
+        "}",
+      ),
+
     _top_level_declaration: ($) =>
       choice(
         $.global_declaration,
@@ -274,7 +304,7 @@ module.exports = grammar({
         repeat($.doc_comment),
         repeat($.tag),
         prec.right(
-          1,
+          3,
           seq(
             field("name", alias($._non_proc_type, $.const_identifier)),
             alias("::", $.operator),
@@ -316,24 +346,29 @@ module.exports = grammar({
         "{",
         list(
           terminator,
-          optional(
-            choice(
-              alias(
-                seq($.identifier, alias("as", $.keyword), $._type),
-                $.sentinel_declaration,
-              ),
-              alias(
-                seq("{", $._expression, "}", "->", $._type),
-                $.interface_expression,
-              ),
-              $.interface_expression,
-            ),
-          ),
+          optional(choice($.interface_sentinel, $.interface_expression)),
         ),
         "}",
       ),
 
-    interface_expression: ($) => seq($._expression),
+    interface_sentinel: ($) =>
+      seq(
+        field("name", $.identifier),
+        alias("as", $.keyword),
+        field("type", $._type),
+      ),
+
+    interface_expression: ($) =>
+      choice(
+        field("expression", $._expression),
+        seq(
+          "{",
+          field("expression", $._expression),
+          "}",
+          "->",
+          field("type", $._type),
+        ),
+      ),
 
     match_declaration: ($) =>
       seq(
@@ -347,7 +382,7 @@ module.exports = grammar({
         ),
         optional("\n"),
         "{",
-        list(terminator, optional($._expression)),
+        list(partial_terminator, optional($._expression)),
         "}",
       ),
 
@@ -551,25 +586,28 @@ module.exports = grammar({
         seq(
           $.parameter_list,
           optional(
-            seq(
-              "->",
-              choice(
-                alias($._type, $.return_type),
-                seq(
-                  "(",
-                  repeat1(
-                    prec.left(
-                      12,
-                      seq(
-                        optional(seq($.identifier, ":")),
-                        alias($._type, $.return_type),
+            choice(
+              "=>",
+              seq(
+                "->",
+                choice(
+                  alias($._type, $.return_type),
+                  seq(
+                    "(",
+                    repeat1(
+                      prec.left(
+                        12,
+                        seq(
+                          optional(seq($.identifier, ":")),
+                          alias($._type, $.return_type),
+                        ),
                       ),
                     ),
+                    ")",
                   ),
-                  ")",
                 ),
+                repeat($.function_directive),
               ),
-              repeat($.function_directive),
             ),
           ),
         ),
@@ -601,7 +639,7 @@ module.exports = grammar({
 
     quick_function_definition: ($) =>
       prec(
-        1,
+        30,
         choice(
           seq(
             field("parameter", $.identifier),
@@ -611,7 +649,10 @@ module.exports = grammar({
           ),
           seq(
             "(",
-            list(",", field("parameter", $.identifier)),
+            list(
+              partial_terminator,
+              optional(field("parameter", $.identifier)),
+            ),
             ")",
             "=>",
             optional("\n"),
@@ -1025,7 +1066,7 @@ module.exports = grammar({
         ),
       ),
 
-    doc_comment: ($) => seq("///", /.*/),
+    doc_comment: ($) => seq("///", /.*/, "\n"),
     comment: ($) =>
       token(
         choice(
