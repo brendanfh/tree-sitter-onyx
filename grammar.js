@@ -194,7 +194,7 @@ module.exports = grammar({
     export_directive: ($) =>
       seq(
         alias("#export", $.compiler_directive),
-        field("name", $._expression),
+        field("name", $._factor_no_call),
         field("value", $._expression),
       ),
     js_directive: ($) =>
@@ -245,18 +245,41 @@ module.exports = grammar({
       ),
 
     if_directive: ($) =>
-      seq(
-        alias("#if", $.compiler_directive),
-        field("condition", $._expression),
-        "{",
-        list(terminator, optional($._top)),
-        "}",
-        optional(
-          seq(
-            alias("else", $.keyword),
-            "{",
-            list(terminator, optional($._top)),
-            "}",
+      prec.left(
+        4,
+        seq(
+          alias("#if", $.compiler_directive),
+          field("condition", $._expression),
+          "{",
+          list(terminator, optional($._top)),
+          "}",
+          optional(
+            seq(
+              alias("else", $.keyword),
+              "{",
+              list(terminator, optional($._top)),
+              "}",
+            ),
+          ),
+        ),
+      ),
+
+    procedural_if_directive: ($) =>
+      prec.left(
+        4,
+        seq(
+          alias("#if", $.compiler_directive),
+          field("condition", $._expression),
+          "{",
+          list(terminator, optional($._statement)),
+          "}",
+          optional(
+            seq(
+              alias("else", $.keyword),
+              "{",
+              list(terminator, optional($._statement)),
+              "}",
+            ),
           ),
         ),
       ),
@@ -695,6 +718,7 @@ module.exports = grammar({
         $.defer_statement,
         $.use_statement,
         $.binding_declaration,
+        $.procedural_if_directive,
         $._expression,
       ),
 
