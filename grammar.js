@@ -267,9 +267,7 @@ module.exports = grammar({
           alias("#local", $.compiler_directive),
           alias("#package", $.compiler_directive),
         ),
-        "{",
-        list(terminator, optional($._top)),
-        "}",
+        optional(seq("{", list(terminator, optional($._top)), "}")),
       ),
 
     _top_level_declaration: ($) =>
