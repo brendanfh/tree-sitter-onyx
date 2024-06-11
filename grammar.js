@@ -1,3 +1,5 @@
+const { compareTuples } = require("node-gyp-build/node-gyp-build");
+
 const special_operators = ["|>", "??"],
   multiplicative_operators = ["*", "/", "%", "<<", ">>", ">>>", "&", "^"],
   additive_operators = ["+", "-", "|"],
@@ -124,7 +126,7 @@ module.exports = grammar({
       ),
 
     _top: ($) =>
-      choice($.use_statement, $._top_level_directive, $._top_level_declaration),
+      choice($.use_statement, $._top_level_statement, $._top_level_declaration),
 
     // Top-level statements
     use_statement: ($) =>
@@ -159,13 +161,16 @@ module.exports = grammar({
     _use_stmt_body_term: ($) =>
       choice($.identifier, alias("package", $.keyword)),
 
-    _top_level_directive: ($) =>
+    _top_level_statement: ($) =>
       choice(
         $.load_directive,
         $.error_directive,
         $.export_directive,
-        $.init_directive,
         $.js_directive,
+        $.overload_directive,
+        $.operator_directive,
+        $.init_declaration,
+        $.foreign_block_declaration,
       ),
 
     load_directive: ($) =>
@@ -177,28 +182,64 @@ module.exports = grammar({
           "load_all_recursive",
           "load_path",
           "library_path",
+          "library",
         ),
         $._expression,
       ),
 
-    error_directive: ($) => seq("#", "error", $._expression),
+    error_directive: ($) =>
+      seq(alias("#error", $.compiler_directive), $._expression),
     export_directive: ($) =>
       seq(
-        "#",
-        "export",
+        alias("#export", $.compiler_directive),
         field("name", $._expression),
         field("value", $._expression),
       ),
-    init_directive: ($) => seq("#", "init", $._expression),
     js_directive: ($) =>
       seq(
-        "#",
-        "js",
-        optional(seq("#", "order", $._expression)),
+        alias("#js", $.compiler_directive),
+        optional(seq(alias("#order", $.compiler_directive), $._expression)),
         choice(
-          optional(seq("#", "file", field("file", $._expression))),
+          optional(
+            seq(
+              alias("#file", $.compiler_directive),
+              field("file", $._expression),
+            ),
+          ),
           field("code", $._expression),
         ),
+      ),
+    overload_directive: ($) =>
+      seq(
+        alias("#overload", $.compiler_directive),
+        field("overloaded_func", $._factor_no_call),
+        alias("::", $.punctuation),
+        field("overload", $._expression),
+      ),
+    operator_directive: ($) =>
+      seq(
+        alias("#operator", $.compiler_directive),
+        field(
+          "operator",
+          choice(
+            ...[
+              ...multiplicative_operators,
+              ...additive_operators,
+              ...comparison_operators,
+              "[]",
+              "[]=",
+              "&[]",
+            ].map((x) => alias(x, $.operator)),
+          ),
+        ),
+        optional(
+          seq(
+            alias("#order", $.compiler_directive),
+            field("order", $.int_literal),
+          ),
+        ),
+        optional(alias("::", $.punctuation)),
+        field("overload", $._expression),
       ),
 
     _top_level_declaration: ($) =>
@@ -210,7 +251,7 @@ module.exports = grammar({
     global_declaration: ($) =>
       seq(
         repeat($.tag),
-        optional(seq("#", "thread_local")),
+        optional(seq(alias("#thread_local", $.compiler_directive))),
         prec.right(
           1,
           seq(
@@ -237,9 +278,22 @@ module.exports = grammar({
           seq(
             field("name", alias($._non_proc_type, $.const_identifier)),
             alias("::", $.operator),
-            field("value", $._expression),
+            field("value", $._top_level_expression),
           ),
         ),
+      ),
+
+    _top_level_expression: ($) =>
+      choice(
+        $.global_declaration,
+        $._type_in_expression,
+        $.interface_declaration,
+        $.macro_definition,
+        $.match_declaration,
+        $.init_declaration,
+        $.foreign_block_declaration,
+        $.compiler_extension_declaration,
+        $._expression,
       ),
 
     binding_declaration: ($) =>
@@ -252,6 +306,75 @@ module.exports = grammar({
             field("value", $._expression),
           ),
         ),
+      ),
+
+    interface_declaration: ($) =>
+      seq(
+        alias("interface", $.keyword),
+        field("parameters", $.parameter_list),
+        optional("\n"),
+        "{",
+        list(
+          terminator,
+          optional(
+            choice(
+              alias(
+                seq($.identifier, alias("as", $.keyword), $._type),
+                $.sentinel_declaration,
+              ),
+              alias(
+                seq("{", $._expression, "}", "->", $._type),
+                $.interface_expression,
+              ),
+              $.interface_expression,
+            ),
+          ),
+        ),
+        "}",
+      ),
+
+    interface_expression: ($) => seq($._expression),
+
+    match_declaration: ($) =>
+      seq(
+        alias("#match", $.compiler_directive),
+        optional(seq("->", field("expected_type", $._type))),
+        repeat(
+          choice(
+            alias("#locked", $.compiler_directive),
+            alias("#local", $.compiler_directive),
+          ),
+        ),
+        optional("\n"),
+        "{",
+        list(terminator, optional($._expression)),
+        "}",
+      ),
+
+    init_declaration: ($) =>
+      seq(
+        alias("#init", $.compiler_directive),
+        repeat(seq(alias("#after", $.compiler_directive), $._factor_no_call)),
+        choice($.function_definition, $.quick_function_definition),
+      ),
+
+    foreign_block_declaration: ($) =>
+      seq(
+        alias("#foreign", $.compiler_directive),
+        optional(alias("#dyncall", $.compiler_directive)),
+        field("module_name", $._expression),
+        "{",
+        list(terminator, optional($._top)),
+        "}",
+      ),
+
+    compiler_extension_declaration: ($) =>
+      seq(
+        alias("#compiler_extension", $.compiler_directive),
+        field("name", $.string_literal),
+        "{",
+        list(partial_terminator, optional($.identifier)),
+        "}",
       ),
 
     _type: ($) => choice(alias($._proc_type, $.proc_type), $._non_proc_type),
@@ -276,6 +399,10 @@ module.exports = grammar({
         1,
         choice(
           seq(alias("#type", $.compiler_directive), $._type),
+          alias(
+            seq(alias("#distinct", $.compiler_directive), $._type),
+            $.distinct_type,
+          ),
           alias(choice(...builtin_types), $.type_identifier),
           alias(seq("[]", $._type), $.slice_type),
           alias(seq("[&]", $._type), $.multi_pointer_type),
@@ -442,8 +569,27 @@ module.exports = grammar({
                   ")",
                 ),
               ),
+              repeat($.function_directive),
             ),
           ),
+        ),
+      ),
+
+    function_directive: ($) =>
+      choice(
+        alias("#null", $.compiler_directive),
+        seq(
+          alias("#intrinsic", $.compiler_directive),
+          optional($.string_literal),
+        ),
+        seq(
+          alias("#foreign", $.compiler_directive),
+          field("module_name", $._expression),
+          field("import_name", $._expression),
+        ),
+        seq(
+          alias("#deprecated", $.compiler_directive),
+          field("deprecation_message", $._expression),
         ),
       ),
 
@@ -638,70 +784,79 @@ module.exports = grammar({
 
     _expression: ($) => prec.right(1, choice($._factor, $.binary_expression)),
 
+    _factor_infix: ($) =>
+      prec(
+        20,
+        choice(
+          $.string_literal,
+          $.bool_literal,
+          $.int_literal,
+          $.float_literal,
+          $.char_literal,
+          $.identifier,
+          $.unary_selector,
+          $.untyped_struct_literal,
+          $.untyped_array_literal,
+          $.quick_function_definition,
+          $.function_definition,
+          $.macro_definition,
+          $.code_block,
+          $._type_in_expression,
+          $.sizeof_expression,
+          $.alignof_expression,
+          $.cast_expression,
+          $._directive_expression,
+          alias($.switch_statement, $.switch_expression),
+          $.do_expression,
+          alias(seq("$", $.identifier), $.polymorphic_variable),
+          seq("(", $._expression, ")"),
+        ),
+      ),
+
+    _factor_prefix: ($) =>
+      choice(
+        ...["-", "!", "~", "~~", "*", "&"].map((x) => alias(x, $.operator)),
+      ),
+
+    _factor_suffix_no_call: ($) =>
+      choice(
+        alias("?", $.operator),
+        alias(seq(".", $.identifier), $.selector),
+        alias(
+          seq("->", field("name", $.identifier), $.argument_list),
+          $.method_call,
+        ),
+        alias(
+          seq(/\n\s*->/, field("name", $.identifier), $.argument_list),
+          $.method_call,
+        ),
+        alias(seq(".*"), $.operator),
+        alias(seq("[", field("subscript", $._expression), "]"), $.subscript),
+        alias(/!\{[^}]*\}/, $.proc_macro_body),
+        $.untyped_struct_literal,
+        $.untyped_array_literal,
+      ),
+
+    _factor_suffix: ($) =>
+      choice(alias($.argument_list, $.proc_call), $._factor_suffix_no_call),
+
     _factor: ($) =>
       prec.right(
         2,
         seq(
-          repeat(
-            prec.right(
-              12,
-              choice(
-                ...["-", "!", "~", "~~", "*", "&"].map((x) =>
-                  alias(x, $.operator),
-                ),
-              ),
-            ),
-          ),
-          choice(
-            $.string_literal,
-            $.bool_literal,
-            $.int_literal,
-            $.float_literal,
-            $.char_literal,
-            $.identifier,
-            $.unary_selector,
-            $.untyped_struct_literal,
-            $.untyped_array_literal,
-            $.quick_function_definition,
-            $.function_definition,
-            $.macro_definition,
-            $.code_block,
-            $._type_in_expression,
-            $.sizeof_expression,
-            $.alignof_expression,
-            $.cast_expression,
-            $._directive_expression,
-            alias($.switch_statement, $.switch_expression),
-            $.do_expression,
-            alias(seq("$", $.identifier), $.polymorphic_variable),
-            seq("(", $._expression, ")"),
-          ),
-          prec.right(
-            12,
-            repeat(
-              choice(
-                alias("?", $.operator),
-                alias(seq(".", $.identifier), $.selector),
-                alias(
-                  seq("->", field("name", $.identifier), $.argument_list),
-                  $.method_call,
-                ),
-                alias(
-                  seq(/\n\s*->/, field("name", $.identifier), $.argument_list),
-                  $.method_call,
-                ),
-                alias(seq(".*"), $.operator),
-                alias(
-                  seq("[", field("subscript", $._expression), "]"),
-                  $.subscript,
-                ),
-                alias($.argument_list, $.proc_call),
-                alias(/!\{[^}]*\}/, $.proc_macro_body),
-                $.untyped_struct_literal,
-                $.untyped_array_literal,
-              ),
-            ),
-          ),
+          repeat(prec.right(12, $._factor_prefix)),
+          prec(12, $._factor_infix),
+          repeat(prec.right(12, $._factor_suffix)),
+        ),
+      ),
+
+    _factor_no_call: ($) =>
+      prec.right(
+        2,
+        seq(
+          repeat(prec.right(12, $._factor_prefix)),
+          prec(12, $._factor_infix),
+          repeat(prec.right(12, $._factor_suffix_no_call)),
         ),
       ),
 
@@ -825,7 +980,11 @@ module.exports = grammar({
       prec.right(seq($.identifier, repeat(seq(".", $.identifier)))),
 
     tag: ($) =>
-      seq(choice("@", seq("#", "tag")), $._expression, optional("\n")),
+      seq(
+        choice("@", alias("#tag", $.compiler_directive)),
+        $._expression,
+        optional("\n"),
+      ),
 
     // Literals
     _true: ($) => "true",

@@ -72,6 +72,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -275,6 +279,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -524,6 +532,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -746,6 +758,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -949,6 +965,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -1171,6 +1191,10 @@
           "named": true
         },
         {
+          "type": "distinct_type",
+          "named": true
+        },
+        {
           "type": "do_expression",
           "named": true
         },
@@ -1389,6 +1413,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -1592,6 +1620,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -1814,6 +1846,10 @@
           "named": true
         },
         {
+          "type": "distinct_type",
+          "named": true
+        },
+        {
           "type": "do_expression",
           "named": true
         },
@@ -2014,6 +2050,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -2220,6 +2260,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -2449,6 +2493,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -2662,6 +2710,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -2897,6 +2949,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -3100,6 +3156,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -3329,6 +3389,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -3555,6 +3619,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -3777,6 +3845,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -3980,6 +4052,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -4233,6 +4309,14 @@
             "named": true
           },
           {
+            "type": "compiler_extension_declaration",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -4249,7 +4333,15 @@
             "named": true
           },
           {
+            "type": "foreign_block_declaration",
+            "named": true
+          },
+          {
             "type": "function_definition",
+            "named": true
+          },
+          {
+            "type": "global_declaration",
             "named": true
           },
           {
@@ -4257,11 +4349,23 @@
             "named": true
           },
           {
+            "type": "init_declaration",
+            "named": true
+          },
+          {
             "type": "int_literal",
             "named": true
           },
           {
+            "type": "interface_declaration",
+            "named": true
+          },
+          {
             "type": "macro_definition",
+            "named": true
+          },
+          {
+            "type": "match_declaration",
             "named": true
           },
           {
@@ -4460,6 +4564,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -4666,6 +4774,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -4917,6 +5029,10 @@
         },
         {
           "type": "defer_statement",
+          "named": true
+        },
+        {
+          "type": "distinct_type",
           "named": true
         },
         {
@@ -5175,6 +5291,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -5388,6 +5508,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -5611,6 +5735,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -5807,6 +5935,10 @@
         },
         {
           "type": "compiler_directive",
+          "named": true
+        },
+        {
+          "type": "distinct_type",
           "named": true
         },
         {
@@ -6017,6 +6149,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -6220,6 +6356,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -6436,6 +6576,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -6662,6 +6806,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -6902,6 +7050,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -7105,6 +7257,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -7331,6 +7487,10 @@
           "named": true
         },
         {
+          "type": "distinct_type",
+          "named": true
+        },
+        {
           "type": "do_expression",
           "named": true
         },
@@ -7534,6 +7694,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -7737,6 +7901,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -7956,6 +8124,10 @@
         },
         {
           "type": "compiler_directive",
+          "named": true
+        },
+        {
+          "type": "distinct_type",
           "named": true
         },
         {
@@ -8090,6 +8262,36 @@
     }
   },
   {
+    "type": "compiler_extension_declaration",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "string_literal",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "compiler_directive",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "const_identifier",
     "named": true,
     "fields": {
@@ -8159,6 +8361,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -8365,6 +8571,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -8584,6 +8794,10 @@
         },
         {
           "type": "compiler_directive",
+          "named": true
+        },
+        {
+          "type": "distinct_type",
           "named": true
         },
         {
@@ -8805,6 +9019,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -9008,6 +9226,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -9257,6 +9479,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -9460,6 +9686,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -9693,6 +9923,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -9896,6 +10130,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -10150,6 +10388,10 @@
           "named": true
         },
         {
+          "type": "distinct_type",
+          "named": true
+        },
+        {
           "type": "do_expression",
           "named": true
         },
@@ -10385,6 +10627,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -10598,6 +10844,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -10844,6 +11094,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -11108,6 +11362,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -11311,6 +11569,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -11564,6 +11826,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -11776,6 +12042,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -11979,6 +12249,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -12201,6 +12475,10 @@
           "named": true
         },
         {
+          "type": "distinct_type",
+          "named": true
+        },
+        {
           "type": "do_expression",
           "named": true
         },
@@ -12401,6 +12679,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -12607,6 +12889,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -12836,6 +13122,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -13052,6 +13342,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -13189,6 +13483,16 @@
           }
         ]
       }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "compiler_directive",
+          "named": true
+        }
+      ]
     }
   },
   {
@@ -13276,6 +13580,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -13492,6 +13800,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -13721,6 +14033,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -13901,7 +14217,7 @@
     }
   },
   {
-    "type": "function_body",
+    "type": "foreign_block_declaration",
     "named": true,
     "fields": {
       "base": {
@@ -13970,6 +14286,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -14176,6 +14496,740 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
+            "type": "do_expression",
+            "named": true
+          },
+          {
+            "type": "dynamic_array_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "float_literal",
+            "named": true
+          },
+          {
+            "type": "function_definition",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
+            "type": "method_call",
+            "named": true
+          },
+          {
+            "type": "multi_pointer_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "optional_type",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "poly_call_type",
+            "named": true
+          },
+          {
+            "type": "polymorphic_variable",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_macro_body",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "quick_function_definition",
+            "named": true
+          },
+          {
+            "type": "selector",
+            "named": true
+          },
+          {
+            "type": "sizeof_expression",
+            "named": true
+          },
+          {
+            "type": "slice_type",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "switch_expression",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "typeof_type",
+            "named": true
+          },
+          {
+            "type": "unary_selector",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "untyped_array_literal",
+            "named": true
+          },
+          {
+            "type": "untyped_struct_literal",
+            "named": true
+          },
+          {
+            "type": "{",
+            "named": false
+          },
+          {
+            "type": "}",
+            "named": false
+          }
+        ]
+      },
+      "count": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "array_type",
+            "named": true
+          }
+        ]
+      },
+      "expr": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "typeof_type",
+            "named": true
+          }
+        ]
+      },
+      "module_name": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "\n",
+            "named": false
+          },
+          {
+            "type": "$",
+            "named": false
+          },
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": "/",
+            "named": false
+          },
+          {
+            "type": "=",
+            "named": false
+          },
+          {
+            "type": "alignof_expression",
+            "named": true
+          },
+          {
+            "type": "argument_list",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "cast_expression",
+            "named": true
+          },
+          {
+            "type": "char_literal",
+            "named": true
+          },
+          {
+            "type": "code_block",
+            "named": true
+          },
+          {
+            "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
+            "type": "do_expression",
+            "named": true
+          },
+          {
+            "type": "dynamic_array_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "float_literal",
+            "named": true
+          },
+          {
+            "type": "function_definition",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
+            "type": "method_call",
+            "named": true
+          },
+          {
+            "type": "multi_pointer_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "optional_type",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "poly_call_type",
+            "named": true
+          },
+          {
+            "type": "polymorphic_variable",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_macro_body",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "quick_function_definition",
+            "named": true
+          },
+          {
+            "type": "selector",
+            "named": true
+          },
+          {
+            "type": "sizeof_expression",
+            "named": true
+          },
+          {
+            "type": "slice_type",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "switch_expression",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "typeof_type",
+            "named": true
+          },
+          {
+            "type": "unary_selector",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "untyped_array_literal",
+            "named": true
+          },
+          {
+            "type": "untyped_struct_literal",
+            "named": true
+          },
+          {
+            "type": "{",
+            "named": false
+          },
+          {
+            "type": "}",
+            "named": false
+          }
+        ]
+      },
+      "name": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "method_call",
+            "named": true
+          }
+        ]
+      },
+      "subscript": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "subscript",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "binding_declaration",
+          "named": true
+        },
+        {
+          "type": "compiler_directive",
+          "named": true
+        },
+        {
+          "type": "error_directive",
+          "named": true
+        },
+        {
+          "type": "export_directive",
+          "named": true
+        },
+        {
+          "type": "foreign_block_declaration",
+          "named": true
+        },
+        {
+          "type": "global_declaration",
+          "named": true
+        },
+        {
+          "type": "init_declaration",
+          "named": true
+        },
+        {
+          "type": "js_directive",
+          "named": true
+        },
+        {
+          "type": "load_directive",
+          "named": true
+        },
+        {
+          "type": "operator_directive",
+          "named": true
+        },
+        {
+          "type": "overload_directive",
+          "named": true
+        },
+        {
+          "type": "use_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "function_body",
+    "named": true,
+    "fields": {
+      "base": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "\n",
+            "named": false
+          },
+          {
+            "type": "$",
+            "named": false
+          },
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": "/",
+            "named": false
+          },
+          {
+            "type": "=",
+            "named": false
+          },
+          {
+            "type": "alignof_expression",
+            "named": true
+          },
+          {
+            "type": "argument_list",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "cast_expression",
+            "named": true
+          },
+          {
+            "type": "char_literal",
+            "named": true
+          },
+          {
+            "type": "code_block",
+            "named": true
+          },
+          {
+            "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
+            "type": "do_expression",
+            "named": true
+          },
+          {
+            "type": "dynamic_array_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "float_literal",
+            "named": true
+          },
+          {
+            "type": "function_definition",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
+            "type": "method_call",
+            "named": true
+          },
+          {
+            "type": "multi_pointer_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "optional_type",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "poly_call_type",
+            "named": true
+          },
+          {
+            "type": "polymorphic_variable",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_macro_body",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "quick_function_definition",
+            "named": true
+          },
+          {
+            "type": "selector",
+            "named": true
+          },
+          {
+            "type": "sizeof_expression",
+            "named": true
+          },
+          {
+            "type": "slice_type",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "switch_expression",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "typeof_type",
+            "named": true
+          },
+          {
+            "type": "unary_selector",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "untyped_array_literal",
+            "named": true
+          },
+          {
+            "type": "untyped_struct_literal",
+            "named": true
+          },
+          {
+            "type": "{",
+            "named": false
+          },
+          {
+            "type": "}",
+            "named": false
+          }
+        ]
+      },
+      "code": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "\n",
+            "named": false
+          },
+          {
+            "type": "$",
+            "named": false
+          },
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": "/",
+            "named": false
+          },
+          {
+            "type": "=",
+            "named": false
+          },
+          {
+            "type": "alignof_expression",
+            "named": true
+          },
+          {
+            "type": "argument_list",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "cast_expression",
+            "named": true
+          },
+          {
+            "type": "char_literal",
+            "named": true
+          },
+          {
+            "type": "code_block",
+            "named": true
+          },
+          {
+            "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -14430,6 +15484,10 @@
           "named": true
         },
         {
+          "type": "distinct_type",
+          "named": true
+        },
+        {
           "type": "do_expression",
           "named": true
         },
@@ -14612,30 +15670,7 @@
     }
   },
   {
-    "type": "function_header",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "identifier",
-          "named": true
-        },
-        {
-          "type": "parameter_list",
-          "named": true
-        },
-        {
-          "type": "return_type",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "global_declaration",
+    "type": "function_directive",
     "named": true,
     "fields": {
       "base": {
@@ -14704,6 +15739,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -14910,6 +15949,1147 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
+            "type": "do_expression",
+            "named": true
+          },
+          {
+            "type": "dynamic_array_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "float_literal",
+            "named": true
+          },
+          {
+            "type": "function_definition",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
+            "type": "method_call",
+            "named": true
+          },
+          {
+            "type": "multi_pointer_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "optional_type",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "poly_call_type",
+            "named": true
+          },
+          {
+            "type": "polymorphic_variable",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_macro_body",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "quick_function_definition",
+            "named": true
+          },
+          {
+            "type": "selector",
+            "named": true
+          },
+          {
+            "type": "sizeof_expression",
+            "named": true
+          },
+          {
+            "type": "slice_type",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "switch_expression",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "typeof_type",
+            "named": true
+          },
+          {
+            "type": "unary_selector",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "untyped_array_literal",
+            "named": true
+          },
+          {
+            "type": "untyped_struct_literal",
+            "named": true
+          },
+          {
+            "type": "{",
+            "named": false
+          },
+          {
+            "type": "}",
+            "named": false
+          }
+        ]
+      },
+      "count": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "array_type",
+            "named": true
+          }
+        ]
+      },
+      "deprecation_message": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "\n",
+            "named": false
+          },
+          {
+            "type": "$",
+            "named": false
+          },
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": "/",
+            "named": false
+          },
+          {
+            "type": "=",
+            "named": false
+          },
+          {
+            "type": "alignof_expression",
+            "named": true
+          },
+          {
+            "type": "argument_list",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "cast_expression",
+            "named": true
+          },
+          {
+            "type": "char_literal",
+            "named": true
+          },
+          {
+            "type": "code_block",
+            "named": true
+          },
+          {
+            "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
+            "type": "do_expression",
+            "named": true
+          },
+          {
+            "type": "dynamic_array_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "float_literal",
+            "named": true
+          },
+          {
+            "type": "function_definition",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
+            "type": "method_call",
+            "named": true
+          },
+          {
+            "type": "multi_pointer_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "optional_type",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "poly_call_type",
+            "named": true
+          },
+          {
+            "type": "polymorphic_variable",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_macro_body",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "quick_function_definition",
+            "named": true
+          },
+          {
+            "type": "selector",
+            "named": true
+          },
+          {
+            "type": "sizeof_expression",
+            "named": true
+          },
+          {
+            "type": "slice_type",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "switch_expression",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "typeof_type",
+            "named": true
+          },
+          {
+            "type": "unary_selector",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "untyped_array_literal",
+            "named": true
+          },
+          {
+            "type": "untyped_struct_literal",
+            "named": true
+          },
+          {
+            "type": "{",
+            "named": false
+          },
+          {
+            "type": "}",
+            "named": false
+          }
+        ]
+      },
+      "expr": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "typeof_type",
+            "named": true
+          }
+        ]
+      },
+      "import_name": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "\n",
+            "named": false
+          },
+          {
+            "type": "$",
+            "named": false
+          },
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": "/",
+            "named": false
+          },
+          {
+            "type": "=",
+            "named": false
+          },
+          {
+            "type": "alignof_expression",
+            "named": true
+          },
+          {
+            "type": "argument_list",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "cast_expression",
+            "named": true
+          },
+          {
+            "type": "char_literal",
+            "named": true
+          },
+          {
+            "type": "code_block",
+            "named": true
+          },
+          {
+            "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
+            "type": "do_expression",
+            "named": true
+          },
+          {
+            "type": "dynamic_array_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "float_literal",
+            "named": true
+          },
+          {
+            "type": "function_definition",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
+            "type": "method_call",
+            "named": true
+          },
+          {
+            "type": "multi_pointer_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "optional_type",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "poly_call_type",
+            "named": true
+          },
+          {
+            "type": "polymorphic_variable",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_macro_body",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "quick_function_definition",
+            "named": true
+          },
+          {
+            "type": "selector",
+            "named": true
+          },
+          {
+            "type": "sizeof_expression",
+            "named": true
+          },
+          {
+            "type": "slice_type",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "switch_expression",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "typeof_type",
+            "named": true
+          },
+          {
+            "type": "unary_selector",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "untyped_array_literal",
+            "named": true
+          },
+          {
+            "type": "untyped_struct_literal",
+            "named": true
+          },
+          {
+            "type": "{",
+            "named": false
+          },
+          {
+            "type": "}",
+            "named": false
+          }
+        ]
+      },
+      "module_name": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "\n",
+            "named": false
+          },
+          {
+            "type": "$",
+            "named": false
+          },
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": "/",
+            "named": false
+          },
+          {
+            "type": "=",
+            "named": false
+          },
+          {
+            "type": "alignof_expression",
+            "named": true
+          },
+          {
+            "type": "argument_list",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "cast_expression",
+            "named": true
+          },
+          {
+            "type": "char_literal",
+            "named": true
+          },
+          {
+            "type": "code_block",
+            "named": true
+          },
+          {
+            "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
+            "type": "do_expression",
+            "named": true
+          },
+          {
+            "type": "dynamic_array_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "float_literal",
+            "named": true
+          },
+          {
+            "type": "function_definition",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
+            "type": "method_call",
+            "named": true
+          },
+          {
+            "type": "multi_pointer_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "optional_type",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "poly_call_type",
+            "named": true
+          },
+          {
+            "type": "polymorphic_variable",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_macro_body",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "quick_function_definition",
+            "named": true
+          },
+          {
+            "type": "selector",
+            "named": true
+          },
+          {
+            "type": "sizeof_expression",
+            "named": true
+          },
+          {
+            "type": "slice_type",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "switch_expression",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "typeof_type",
+            "named": true
+          },
+          {
+            "type": "unary_selector",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "untyped_array_literal",
+            "named": true
+          },
+          {
+            "type": "untyped_struct_literal",
+            "named": true
+          },
+          {
+            "type": "{",
+            "named": false
+          },
+          {
+            "type": "}",
+            "named": false
+          }
+        ]
+      },
+      "name": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "method_call",
+            "named": true
+          }
+        ]
+      },
+      "subscript": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "subscript",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "compiler_directive",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "function_header",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "function_directive",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "parameter_list",
+          "named": true
+        },
+        {
+          "type": "return_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "global_declaration",
+    "named": true,
+    "fields": {
+      "base": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "\n",
+            "named": false
+          },
+          {
+            "type": "$",
+            "named": false
+          },
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": "/",
+            "named": false
+          },
+          {
+            "type": "=",
+            "named": false
+          },
+          {
+            "type": "alignof_expression",
+            "named": true
+          },
+          {
+            "type": "argument_list",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "cast_expression",
+            "named": true
+          },
+          {
+            "type": "char_literal",
+            "named": true
+          },
+          {
+            "type": "code_block",
+            "named": true
+          },
+          {
+            "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
+            "type": "do_expression",
+            "named": true
+          },
+          {
+            "type": "dynamic_array_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "float_literal",
+            "named": true
+          },
+          {
+            "type": "function_definition",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
+            "type": "method_call",
+            "named": true
+          },
+          {
+            "type": "multi_pointer_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "optional_type",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "poly_call_type",
+            "named": true
+          },
+          {
+            "type": "polymorphic_variable",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_macro_body",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "quick_function_definition",
+            "named": true
+          },
+          {
+            "type": "selector",
+            "named": true
+          },
+          {
+            "type": "sizeof_expression",
+            "named": true
+          },
+          {
+            "type": "slice_type",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "switch_expression",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "typeof_type",
+            "named": true
+          },
+          {
+            "type": "unary_selector",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "untyped_array_literal",
+            "named": true
+          },
+          {
+            "type": "untyped_struct_literal",
+            "named": true
+          },
+          {
+            "type": "{",
+            "named": false
+          },
+          {
+            "type": "}",
+            "named": false
+          }
+        ]
+      },
+      "code": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "\n",
+            "named": false
+          },
+          {
+            "type": "$",
+            "named": false
+          },
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": "/",
+            "named": false
+          },
+          {
+            "type": "=",
+            "named": false
+          },
+          {
+            "type": "alignof_expression",
+            "named": true
+          },
+          {
+            "type": "argument_list",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "cast_expression",
+            "named": true
+          },
+          {
+            "type": "char_literal",
+            "named": true
+          },
+          {
+            "type": "code_block",
+            "named": true
+          },
+          {
+            "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -15163,6 +17343,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -15369,6 +17553,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -15512,6 +17700,10 @@
       "required": true,
       "types": [
         {
+          "type": "compiler_directive",
+          "named": true
+        },
+        {
           "type": "operator",
           "named": true
         },
@@ -15607,6 +17799,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -15816,6 +18012,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -16019,6 +18219,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -16300,6 +18504,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -16502,7 +18710,7 @@
     }
   },
   {
-    "type": "init_directive",
+    "type": "init_declaration",
     "named": true,
     "fields": {
       "base": {
@@ -16571,6 +18779,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -16777,6 +18989,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -16999,6 +19215,10 @@
           "named": true
         },
         {
+          "type": "distinct_type",
+          "named": true
+        },
+        {
           "type": "do_expression",
           "named": true
         },
@@ -17130,7 +19350,41 @@
     }
   },
   {
-    "type": "js_directive",
+    "type": "interface_declaration",
+    "named": true,
+    "fields": {
+      "parameters": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "parameter_list",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "interface_expression",
+          "named": true
+        },
+        {
+          "type": "keyword",
+          "named": true
+        },
+        {
+          "type": "sentinel_declaration",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "interface_expression",
     "named": true,
     "fields": {
       "base": {
@@ -17199,6 +19453,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -17405,6 +19663,650 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
+            "type": "do_expression",
+            "named": true
+          },
+          {
+            "type": "dynamic_array_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "float_literal",
+            "named": true
+          },
+          {
+            "type": "function_definition",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
+            "type": "method_call",
+            "named": true
+          },
+          {
+            "type": "multi_pointer_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "optional_type",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "poly_call_type",
+            "named": true
+          },
+          {
+            "type": "polymorphic_variable",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_macro_body",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "quick_function_definition",
+            "named": true
+          },
+          {
+            "type": "selector",
+            "named": true
+          },
+          {
+            "type": "sizeof_expression",
+            "named": true
+          },
+          {
+            "type": "slice_type",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "switch_expression",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "typeof_type",
+            "named": true
+          },
+          {
+            "type": "unary_selector",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "untyped_array_literal",
+            "named": true
+          },
+          {
+            "type": "untyped_struct_literal",
+            "named": true
+          },
+          {
+            "type": "{",
+            "named": false
+          },
+          {
+            "type": "}",
+            "named": false
+          }
+        ]
+      },
+      "count": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "array_type",
+            "named": true
+          }
+        ]
+      },
+      "expr": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "typeof_type",
+            "named": true
+          }
+        ]
+      },
+      "name": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "method_call",
+            "named": true
+          }
+        ]
+      },
+      "subscript": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "subscript",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "alignof_expression",
+          "named": true
+        },
+        {
+          "type": "argument_list",
+          "named": true
+        },
+        {
+          "type": "array_type",
+          "named": true
+        },
+        {
+          "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "cast_expression",
+          "named": true
+        },
+        {
+          "type": "char_literal",
+          "named": true
+        },
+        {
+          "type": "code_block",
+          "named": true
+        },
+        {
+          "type": "compiler_directive",
+          "named": true
+        },
+        {
+          "type": "distinct_type",
+          "named": true
+        },
+        {
+          "type": "do_expression",
+          "named": true
+        },
+        {
+          "type": "dynamic_array_type",
+          "named": true
+        },
+        {
+          "type": "enum_type",
+          "named": true
+        },
+        {
+          "type": "float_literal",
+          "named": true
+        },
+        {
+          "type": "function_definition",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "int_literal",
+          "named": true
+        },
+        {
+          "type": "macro_definition",
+          "named": true
+        },
+        {
+          "type": "method_call",
+          "named": true
+        },
+        {
+          "type": "multi_pointer_type",
+          "named": true
+        },
+        {
+          "type": "operator",
+          "named": true
+        },
+        {
+          "type": "optional_type",
+          "named": true
+        },
+        {
+          "type": "pointer_type",
+          "named": true
+        },
+        {
+          "type": "poly_call_type",
+          "named": true
+        },
+        {
+          "type": "polymorphic_variable",
+          "named": true
+        },
+        {
+          "type": "proc_call",
+          "named": true
+        },
+        {
+          "type": "proc_macro_body",
+          "named": true
+        },
+        {
+          "type": "proc_type",
+          "named": true
+        },
+        {
+          "type": "quick_function_definition",
+          "named": true
+        },
+        {
+          "type": "selector",
+          "named": true
+        },
+        {
+          "type": "sizeof_expression",
+          "named": true
+        },
+        {
+          "type": "slice_type",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "struct_type",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "switch_expression",
+          "named": true
+        },
+        {
+          "type": "type_identifier",
+          "named": true
+        },
+        {
+          "type": "typeof_type",
+          "named": true
+        },
+        {
+          "type": "unary_selector",
+          "named": true
+        },
+        {
+          "type": "union_type",
+          "named": true
+        },
+        {
+          "type": "untyped_array_literal",
+          "named": true
+        },
+        {
+          "type": "untyped_struct_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "js_directive",
+    "named": true,
+    "fields": {
+      "base": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "\n",
+            "named": false
+          },
+          {
+            "type": "$",
+            "named": false
+          },
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": "/",
+            "named": false
+          },
+          {
+            "type": "=",
+            "named": false
+          },
+          {
+            "type": "alignof_expression",
+            "named": true
+          },
+          {
+            "type": "argument_list",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "cast_expression",
+            "named": true
+          },
+          {
+            "type": "char_literal",
+            "named": true
+          },
+          {
+            "type": "code_block",
+            "named": true
+          },
+          {
+            "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
+            "type": "do_expression",
+            "named": true
+          },
+          {
+            "type": "dynamic_array_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "float_literal",
+            "named": true
+          },
+          {
+            "type": "function_definition",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
+            "type": "method_call",
+            "named": true
+          },
+          {
+            "type": "multi_pointer_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "optional_type",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "poly_call_type",
+            "named": true
+          },
+          {
+            "type": "polymorphic_variable",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_macro_body",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "quick_function_definition",
+            "named": true
+          },
+          {
+            "type": "selector",
+            "named": true
+          },
+          {
+            "type": "sizeof_expression",
+            "named": true
+          },
+          {
+            "type": "slice_type",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "switch_expression",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "typeof_type",
+            "named": true
+          },
+          {
+            "type": "unary_selector",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "untyped_array_literal",
+            "named": true
+          },
+          {
+            "type": "untyped_struct_literal",
+            "named": true
+          },
+          {
+            "type": "{",
+            "named": false
+          },
+          {
+            "type": "}",
+            "named": false
+          }
+        ]
+      },
+      "code": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "\n",
+            "named": false
+          },
+          {
+            "type": "$",
+            "named": false
+          },
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": "/",
+            "named": false
+          },
+          {
+            "type": "=",
+            "named": false
+          },
+          {
+            "type": "alignof_expression",
+            "named": true
+          },
+          {
+            "type": "argument_list",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "cast_expression",
+            "named": true
+          },
+          {
+            "type": "char_literal",
+            "named": true
+          },
+          {
+            "type": "code_block",
+            "named": true
+          },
+          {
+            "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -17634,6 +20536,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -17794,7 +20700,7 @@
     },
     "children": {
       "multiple": true,
-      "required": false,
+      "required": true,
       "types": [
         {
           "type": "alignof_expression",
@@ -17830,6 +20736,10 @@
         },
         {
           "type": "compiler_directive",
+          "named": true
+        },
+        {
+          "type": "distinct_type",
           "named": true
         },
         {
@@ -18036,6 +20946,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -18239,6 +21153,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -18461,6 +21379,10 @@
           "named": true
         },
         {
+          "type": "distinct_type",
+          "named": true
+        },
+        {
           "type": "do_expression",
           "named": true
         },
@@ -18622,70 +21544,9 @@
     }
   },
   {
-    "type": "method_call",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "argument",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "package_clause",
+    "type": "match_declaration",
     "named": true,
     "fields": {
-      "docs": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "doc_comment",
-            "named": true
-          }
-        ]
-      },
-      "name": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "identifier_list",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "keyword",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "parameter",
-    "named": true,
-    "fields": {
-      "baked": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "$",
-            "named": false
-          }
-        ]
-      },
       "base": {
         "multiple": true,
         "required": false,
@@ -18752,6 +21613,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -18958,6 +21823,2531 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
+            "type": "do_expression",
+            "named": true
+          },
+          {
+            "type": "dynamic_array_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "float_literal",
+            "named": true
+          },
+          {
+            "type": "function_definition",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
+            "type": "method_call",
+            "named": true
+          },
+          {
+            "type": "multi_pointer_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "optional_type",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "poly_call_type",
+            "named": true
+          },
+          {
+            "type": "polymorphic_variable",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_macro_body",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "quick_function_definition",
+            "named": true
+          },
+          {
+            "type": "selector",
+            "named": true
+          },
+          {
+            "type": "sizeof_expression",
+            "named": true
+          },
+          {
+            "type": "slice_type",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "switch_expression",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "typeof_type",
+            "named": true
+          },
+          {
+            "type": "unary_selector",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "untyped_array_literal",
+            "named": true
+          },
+          {
+            "type": "untyped_struct_literal",
+            "named": true
+          },
+          {
+            "type": "{",
+            "named": false
+          },
+          {
+            "type": "}",
+            "named": false
+          }
+        ]
+      },
+      "count": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "array_type",
+            "named": true
+          }
+        ]
+      },
+      "expected_type": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "\n",
+            "named": false
+          },
+          {
+            "type": "$",
+            "named": false
+          },
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": "/",
+            "named": false
+          },
+          {
+            "type": "=",
+            "named": false
+          },
+          {
+            "type": "alignof_expression",
+            "named": true
+          },
+          {
+            "type": "argument_list",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "cast_expression",
+            "named": true
+          },
+          {
+            "type": "char_literal",
+            "named": true
+          },
+          {
+            "type": "code_block",
+            "named": true
+          },
+          {
+            "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
+            "type": "do_expression",
+            "named": true
+          },
+          {
+            "type": "dynamic_array_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "float_literal",
+            "named": true
+          },
+          {
+            "type": "function_definition",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
+            "type": "method_call",
+            "named": true
+          },
+          {
+            "type": "multi_pointer_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "optional_type",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "poly_call_type",
+            "named": true
+          },
+          {
+            "type": "polymorphic_variable",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_macro_body",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "quick_function_definition",
+            "named": true
+          },
+          {
+            "type": "selector",
+            "named": true
+          },
+          {
+            "type": "sizeof_expression",
+            "named": true
+          },
+          {
+            "type": "slice_type",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "switch_expression",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "typeof_type",
+            "named": true
+          },
+          {
+            "type": "unary_selector",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "untyped_array_literal",
+            "named": true
+          },
+          {
+            "type": "untyped_struct_literal",
+            "named": true
+          },
+          {
+            "type": "{",
+            "named": false
+          },
+          {
+            "type": "}",
+            "named": false
+          }
+        ]
+      },
+      "expr": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "typeof_type",
+            "named": true
+          }
+        ]
+      },
+      "name": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "method_call",
+            "named": true
+          }
+        ]
+      },
+      "subscript": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "subscript",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "alignof_expression",
+          "named": true
+        },
+        {
+          "type": "argument_list",
+          "named": true
+        },
+        {
+          "type": "array_type",
+          "named": true
+        },
+        {
+          "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "cast_expression",
+          "named": true
+        },
+        {
+          "type": "char_literal",
+          "named": true
+        },
+        {
+          "type": "code_block",
+          "named": true
+        },
+        {
+          "type": "compiler_directive",
+          "named": true
+        },
+        {
+          "type": "distinct_type",
+          "named": true
+        },
+        {
+          "type": "do_expression",
+          "named": true
+        },
+        {
+          "type": "dynamic_array_type",
+          "named": true
+        },
+        {
+          "type": "enum_type",
+          "named": true
+        },
+        {
+          "type": "float_literal",
+          "named": true
+        },
+        {
+          "type": "function_definition",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "int_literal",
+          "named": true
+        },
+        {
+          "type": "macro_definition",
+          "named": true
+        },
+        {
+          "type": "method_call",
+          "named": true
+        },
+        {
+          "type": "multi_pointer_type",
+          "named": true
+        },
+        {
+          "type": "operator",
+          "named": true
+        },
+        {
+          "type": "optional_type",
+          "named": true
+        },
+        {
+          "type": "pointer_type",
+          "named": true
+        },
+        {
+          "type": "poly_call_type",
+          "named": true
+        },
+        {
+          "type": "polymorphic_variable",
+          "named": true
+        },
+        {
+          "type": "proc_call",
+          "named": true
+        },
+        {
+          "type": "proc_macro_body",
+          "named": true
+        },
+        {
+          "type": "proc_type",
+          "named": true
+        },
+        {
+          "type": "quick_function_definition",
+          "named": true
+        },
+        {
+          "type": "selector",
+          "named": true
+        },
+        {
+          "type": "sizeof_expression",
+          "named": true
+        },
+        {
+          "type": "slice_type",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "struct_type",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "switch_expression",
+          "named": true
+        },
+        {
+          "type": "type_identifier",
+          "named": true
+        },
+        {
+          "type": "typeof_type",
+          "named": true
+        },
+        {
+          "type": "unary_selector",
+          "named": true
+        },
+        {
+          "type": "union_type",
+          "named": true
+        },
+        {
+          "type": "untyped_array_literal",
+          "named": true
+        },
+        {
+          "type": "untyped_struct_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "method_call",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "argument",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "operator_directive",
+    "named": true,
+    "fields": {
+      "base": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "\n",
+            "named": false
+          },
+          {
+            "type": "$",
+            "named": false
+          },
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": "/",
+            "named": false
+          },
+          {
+            "type": "=",
+            "named": false
+          },
+          {
+            "type": "alignof_expression",
+            "named": true
+          },
+          {
+            "type": "argument_list",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "cast_expression",
+            "named": true
+          },
+          {
+            "type": "char_literal",
+            "named": true
+          },
+          {
+            "type": "code_block",
+            "named": true
+          },
+          {
+            "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
+            "type": "do_expression",
+            "named": true
+          },
+          {
+            "type": "dynamic_array_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "float_literal",
+            "named": true
+          },
+          {
+            "type": "function_definition",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
+            "type": "method_call",
+            "named": true
+          },
+          {
+            "type": "multi_pointer_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "optional_type",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "poly_call_type",
+            "named": true
+          },
+          {
+            "type": "polymorphic_variable",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_macro_body",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "quick_function_definition",
+            "named": true
+          },
+          {
+            "type": "selector",
+            "named": true
+          },
+          {
+            "type": "sizeof_expression",
+            "named": true
+          },
+          {
+            "type": "slice_type",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "switch_expression",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "typeof_type",
+            "named": true
+          },
+          {
+            "type": "unary_selector",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "untyped_array_literal",
+            "named": true
+          },
+          {
+            "type": "untyped_struct_literal",
+            "named": true
+          },
+          {
+            "type": "{",
+            "named": false
+          },
+          {
+            "type": "}",
+            "named": false
+          }
+        ]
+      },
+      "code": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "\n",
+            "named": false
+          },
+          {
+            "type": "$",
+            "named": false
+          },
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": "/",
+            "named": false
+          },
+          {
+            "type": "=",
+            "named": false
+          },
+          {
+            "type": "alignof_expression",
+            "named": true
+          },
+          {
+            "type": "argument_list",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "cast_expression",
+            "named": true
+          },
+          {
+            "type": "char_literal",
+            "named": true
+          },
+          {
+            "type": "code_block",
+            "named": true
+          },
+          {
+            "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
+            "type": "do_expression",
+            "named": true
+          },
+          {
+            "type": "dynamic_array_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "float_literal",
+            "named": true
+          },
+          {
+            "type": "function_definition",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
+            "type": "method_call",
+            "named": true
+          },
+          {
+            "type": "multi_pointer_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "optional_type",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "poly_call_type",
+            "named": true
+          },
+          {
+            "type": "polymorphic_variable",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_macro_body",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "quick_function_definition",
+            "named": true
+          },
+          {
+            "type": "selector",
+            "named": true
+          },
+          {
+            "type": "sizeof_expression",
+            "named": true
+          },
+          {
+            "type": "slice_type",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "switch_expression",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "typeof_type",
+            "named": true
+          },
+          {
+            "type": "unary_selector",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "untyped_array_literal",
+            "named": true
+          },
+          {
+            "type": "untyped_struct_literal",
+            "named": true
+          },
+          {
+            "type": "{",
+            "named": false
+          },
+          {
+            "type": "}",
+            "named": false
+          }
+        ]
+      },
+      "count": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "array_type",
+            "named": true
+          }
+        ]
+      },
+      "expr": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "typeof_type",
+            "named": true
+          }
+        ]
+      },
+      "name": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "method_call",
+            "named": true
+          }
+        ]
+      },
+      "operator": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "operator",
+            "named": true
+          }
+        ]
+      },
+      "order": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "int_literal",
+            "named": true
+          }
+        ]
+      },
+      "overload": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "\n",
+            "named": false
+          },
+          {
+            "type": "$",
+            "named": false
+          },
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": "/",
+            "named": false
+          },
+          {
+            "type": "=",
+            "named": false
+          },
+          {
+            "type": "alignof_expression",
+            "named": true
+          },
+          {
+            "type": "argument_list",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "cast_expression",
+            "named": true
+          },
+          {
+            "type": "char_literal",
+            "named": true
+          },
+          {
+            "type": "code_block",
+            "named": true
+          },
+          {
+            "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
+            "type": "do_expression",
+            "named": true
+          },
+          {
+            "type": "dynamic_array_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "float_literal",
+            "named": true
+          },
+          {
+            "type": "function_definition",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
+            "type": "method_call",
+            "named": true
+          },
+          {
+            "type": "multi_pointer_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "optional_type",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "poly_call_type",
+            "named": true
+          },
+          {
+            "type": "polymorphic_variable",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_macro_body",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "quick_function_definition",
+            "named": true
+          },
+          {
+            "type": "selector",
+            "named": true
+          },
+          {
+            "type": "sizeof_expression",
+            "named": true
+          },
+          {
+            "type": "slice_type",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "switch_expression",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "typeof_type",
+            "named": true
+          },
+          {
+            "type": "unary_selector",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "untyped_array_literal",
+            "named": true
+          },
+          {
+            "type": "untyped_struct_literal",
+            "named": true
+          },
+          {
+            "type": "{",
+            "named": false
+          },
+          {
+            "type": "}",
+            "named": false
+          }
+        ]
+      },
+      "subscript": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "subscript",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "compiler_directive",
+          "named": true
+        },
+        {
+          "type": "punctuation",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "overload_directive",
+    "named": true,
+    "fields": {
+      "base": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "\n",
+            "named": false
+          },
+          {
+            "type": "$",
+            "named": false
+          },
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": "/",
+            "named": false
+          },
+          {
+            "type": "=",
+            "named": false
+          },
+          {
+            "type": "alignof_expression",
+            "named": true
+          },
+          {
+            "type": "argument_list",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "cast_expression",
+            "named": true
+          },
+          {
+            "type": "char_literal",
+            "named": true
+          },
+          {
+            "type": "code_block",
+            "named": true
+          },
+          {
+            "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
+            "type": "do_expression",
+            "named": true
+          },
+          {
+            "type": "dynamic_array_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "float_literal",
+            "named": true
+          },
+          {
+            "type": "function_definition",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
+            "type": "method_call",
+            "named": true
+          },
+          {
+            "type": "multi_pointer_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "optional_type",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "poly_call_type",
+            "named": true
+          },
+          {
+            "type": "polymorphic_variable",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_macro_body",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "quick_function_definition",
+            "named": true
+          },
+          {
+            "type": "selector",
+            "named": true
+          },
+          {
+            "type": "sizeof_expression",
+            "named": true
+          },
+          {
+            "type": "slice_type",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "switch_expression",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "typeof_type",
+            "named": true
+          },
+          {
+            "type": "unary_selector",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "untyped_array_literal",
+            "named": true
+          },
+          {
+            "type": "untyped_struct_literal",
+            "named": true
+          },
+          {
+            "type": "{",
+            "named": false
+          },
+          {
+            "type": "}",
+            "named": false
+          }
+        ]
+      },
+      "code": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "\n",
+            "named": false
+          },
+          {
+            "type": "$",
+            "named": false
+          },
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": "/",
+            "named": false
+          },
+          {
+            "type": "=",
+            "named": false
+          },
+          {
+            "type": "alignof_expression",
+            "named": true
+          },
+          {
+            "type": "argument_list",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "cast_expression",
+            "named": true
+          },
+          {
+            "type": "char_literal",
+            "named": true
+          },
+          {
+            "type": "code_block",
+            "named": true
+          },
+          {
+            "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
+            "type": "do_expression",
+            "named": true
+          },
+          {
+            "type": "dynamic_array_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "float_literal",
+            "named": true
+          },
+          {
+            "type": "function_definition",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
+            "type": "method_call",
+            "named": true
+          },
+          {
+            "type": "multi_pointer_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "optional_type",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "poly_call_type",
+            "named": true
+          },
+          {
+            "type": "polymorphic_variable",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_macro_body",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "quick_function_definition",
+            "named": true
+          },
+          {
+            "type": "selector",
+            "named": true
+          },
+          {
+            "type": "sizeof_expression",
+            "named": true
+          },
+          {
+            "type": "slice_type",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "switch_expression",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "typeof_type",
+            "named": true
+          },
+          {
+            "type": "unary_selector",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "untyped_array_literal",
+            "named": true
+          },
+          {
+            "type": "untyped_struct_literal",
+            "named": true
+          },
+          {
+            "type": "{",
+            "named": false
+          },
+          {
+            "type": "}",
+            "named": false
+          }
+        ]
+      },
+      "count": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "array_type",
+            "named": true
+          }
+        ]
+      },
+      "expr": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "typeof_type",
+            "named": true
+          }
+        ]
+      },
+      "name": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "method_call",
+            "named": true
+          }
+        ]
+      },
+      "overload": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "\n",
+            "named": false
+          },
+          {
+            "type": "$",
+            "named": false
+          },
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": "/",
+            "named": false
+          },
+          {
+            "type": "=",
+            "named": false
+          },
+          {
+            "type": "alignof_expression",
+            "named": true
+          },
+          {
+            "type": "argument_list",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "cast_expression",
+            "named": true
+          },
+          {
+            "type": "char_literal",
+            "named": true
+          },
+          {
+            "type": "code_block",
+            "named": true
+          },
+          {
+            "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
+            "type": "do_expression",
+            "named": true
+          },
+          {
+            "type": "dynamic_array_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "float_literal",
+            "named": true
+          },
+          {
+            "type": "function_definition",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
+            "type": "method_call",
+            "named": true
+          },
+          {
+            "type": "multi_pointer_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "optional_type",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "poly_call_type",
+            "named": true
+          },
+          {
+            "type": "polymorphic_variable",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_macro_body",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "quick_function_definition",
+            "named": true
+          },
+          {
+            "type": "selector",
+            "named": true
+          },
+          {
+            "type": "sizeof_expression",
+            "named": true
+          },
+          {
+            "type": "slice_type",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "switch_expression",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "typeof_type",
+            "named": true
+          },
+          {
+            "type": "unary_selector",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "untyped_array_literal",
+            "named": true
+          },
+          {
+            "type": "untyped_struct_literal",
+            "named": true
+          },
+          {
+            "type": "{",
+            "named": false
+          },
+          {
+            "type": "}",
+            "named": false
+          }
+        ]
+      },
+      "overloaded_func": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "\n",
+            "named": false
+          },
+          {
+            "type": "$",
+            "named": false
+          },
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": "/",
+            "named": false
+          },
+          {
+            "type": "=",
+            "named": false
+          },
+          {
+            "type": "alignof_expression",
+            "named": true
+          },
+          {
+            "type": "argument_list",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "cast_expression",
+            "named": true
+          },
+          {
+            "type": "char_literal",
+            "named": true
+          },
+          {
+            "type": "code_block",
+            "named": true
+          },
+          {
+            "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
+            "type": "do_expression",
+            "named": true
+          },
+          {
+            "type": "dynamic_array_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "float_literal",
+            "named": true
+          },
+          {
+            "type": "function_definition",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
+            "type": "method_call",
+            "named": true
+          },
+          {
+            "type": "multi_pointer_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "optional_type",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "poly_call_type",
+            "named": true
+          },
+          {
+            "type": "polymorphic_variable",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_macro_body",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "quick_function_definition",
+            "named": true
+          },
+          {
+            "type": "selector",
+            "named": true
+          },
+          {
+            "type": "sizeof_expression",
+            "named": true
+          },
+          {
+            "type": "slice_type",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "switch_expression",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "typeof_type",
+            "named": true
+          },
+          {
+            "type": "unary_selector",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "untyped_array_literal",
+            "named": true
+          },
+          {
+            "type": "untyped_struct_literal",
+            "named": true
+          },
+          {
+            "type": "{",
+            "named": false
+          },
+          {
+            "type": "}",
+            "named": false
+          }
+        ]
+      },
+      "subscript": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "subscript",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "compiler_directive",
+          "named": true
+        },
+        {
+          "type": "punctuation",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "package_clause",
+    "named": true,
+    "fields": {
+      "docs": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "doc_comment",
+            "named": true
+          }
+        ]
+      },
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier_list",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "keyword",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "parameter",
+    "named": true,
+    "fields": {
+      "baked": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "$",
+            "named": false
+          }
+        ]
+      },
+      "base": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "\n",
+            "named": false
+          },
+          {
+            "type": "$",
+            "named": false
+          },
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": "/",
+            "named": false
+          },
+          {
+            "type": "=",
+            "named": false
+          },
+          {
+            "type": "alignof_expression",
+            "named": true
+          },
+          {
+            "type": "argument_list",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "cast_expression",
+            "named": true
+          },
+          {
+            "type": "char_literal",
+            "named": true
+          },
+          {
+            "type": "code_block",
+            "named": true
+          },
+          {
+            "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
+            "type": "do_expression",
+            "named": true
+          },
+          {
+            "type": "dynamic_array_type",
+            "named": true
+          },
+          {
+            "type": "enum_type",
+            "named": true
+          },
+          {
+            "type": "float_literal",
+            "named": true
+          },
+          {
+            "type": "function_definition",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "int_literal",
+            "named": true
+          },
+          {
+            "type": "macro_definition",
+            "named": true
+          },
+          {
+            "type": "method_call",
+            "named": true
+          },
+          {
+            "type": "multi_pointer_type",
+            "named": true
+          },
+          {
+            "type": "operator",
+            "named": true
+          },
+          {
+            "type": "optional_type",
+            "named": true
+          },
+          {
+            "type": "pointer_type",
+            "named": true
+          },
+          {
+            "type": "poly_call_type",
+            "named": true
+          },
+          {
+            "type": "polymorphic_variable",
+            "named": true
+          },
+          {
+            "type": "proc_call",
+            "named": true
+          },
+          {
+            "type": "proc_macro_body",
+            "named": true
+          },
+          {
+            "type": "proc_type",
+            "named": true
+          },
+          {
+            "type": "quick_function_definition",
+            "named": true
+          },
+          {
+            "type": "selector",
+            "named": true
+          },
+          {
+            "type": "sizeof_expression",
+            "named": true
+          },
+          {
+            "type": "slice_type",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "struct_type",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "switch_expression",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
+            "type": "typeof_type",
+            "named": true
+          },
+          {
+            "type": "unary_selector",
+            "named": true
+          },
+          {
+            "type": "union_type",
+            "named": true
+          },
+          {
+            "type": "untyped_array_literal",
+            "named": true
+          },
+          {
+            "type": "untyped_struct_literal",
+            "named": true
+          },
+          {
+            "type": "{",
+            "named": false
+          },
+          {
+            "type": "}",
+            "named": false
+          }
+        ]
+      },
+      "code": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "\n",
+            "named": false
+          },
+          {
+            "type": "$",
+            "named": false
+          },
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": "/",
+            "named": false
+          },
+          {
+            "type": "=",
+            "named": false
+          },
+          {
+            "type": "alignof_expression",
+            "named": true
+          },
+          {
+            "type": "argument_list",
+            "named": true
+          },
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "binary_expression",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "cast_expression",
+            "named": true
+          },
+          {
+            "type": "char_literal",
+            "named": true
+          },
+          {
+            "type": "code_block",
+            "named": true
+          },
+          {
+            "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -19221,6 +24611,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -19424,6 +24818,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -19695,6 +25093,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -19898,6 +25300,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -20147,6 +25553,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -20350,6 +25760,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -20601,6 +26015,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -20804,6 +26222,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -21026,6 +26448,10 @@
           "named": true
         },
         {
+          "type": "distinct_type",
+          "named": true
+        },
+        {
           "type": "do_expression",
           "named": true
         },
@@ -21233,6 +26659,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -21436,6 +26866,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -21682,6 +27116,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -21855,11 +27293,15 @@
           "named": true
         },
         {
+          "type": "foreign_block_declaration",
+          "named": true
+        },
+        {
           "type": "global_declaration",
           "named": true
         },
         {
-          "type": "init_directive",
+          "type": "init_declaration",
           "named": true
         },
         {
@@ -21868,6 +27310,14 @@
         },
         {
           "type": "load_directive",
+          "named": true
+        },
+        {
+          "type": "operator_directive",
+          "named": true
+        },
+        {
+          "type": "overload_directive",
           "named": true
         },
         {
@@ -21970,6 +27420,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -22176,6 +27630,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -22426,6 +27884,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -22632,6 +28094,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -22903,6 +28369,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -23106,6 +28576,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -23328,6 +28802,10 @@
           "named": true
         },
         {
+          "type": "distinct_type",
+          "named": true
+        },
+        {
           "type": "do_expression",
           "named": true
         },
@@ -23528,6 +29006,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -23744,6 +29226,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -24005,6 +29491,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -24256,6 +29746,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -24481,6 +29975,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -24694,6 +30192,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -24955,6 +30457,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -25209,6 +30715,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -25431,6 +30941,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -25634,6 +31148,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -25856,6 +31374,10 @@
           "named": true
         },
         {
+          "type": "distinct_type",
+          "named": true
+        },
+        {
           "type": "do_expression",
           "named": true
         },
@@ -26056,6 +31578,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -26262,6 +31788,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -26484,6 +32014,10 @@
           "named": true
         },
         {
+          "type": "distinct_type",
+          "named": true
+        },
+        {
           "type": "do_expression",
           "named": true
         },
@@ -26702,6 +32236,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -26905,6 +32443,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -27168,6 +32710,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -27428,6 +32974,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -27631,6 +33181,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -27853,6 +33407,10 @@
           "named": true
         },
         {
+          "type": "distinct_type",
+          "named": true
+        },
+        {
           "type": "do_expression",
           "named": true
         },
@@ -28053,6 +33611,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -28259,6 +33821,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -28482,6 +34048,10 @@
         },
         {
           "type": "compiler_directive",
+          "named": true
+        },
+        {
+          "type": "distinct_type",
           "named": true
         },
         {
@@ -28726,6 +34296,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -28942,6 +34516,10 @@
             "named": true
           },
           {
+            "type": "distinct_type",
+            "named": true
+          },
+          {
             "type": "do_expression",
             "named": true
           },
@@ -29145,6 +34723,10 @@
           },
           {
             "type": "compiler_directive",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -29403,6 +34985,10 @@
           },
           {
             "type": "defer_statement",
+            "named": true
+          },
+          {
+            "type": "distinct_type",
             "named": true
           },
           {
@@ -29736,20 +35322,8 @@
     "named": true
   },
   {
-    "type": "error",
-    "named": false
-  },
-  {
     "type": "escape_sequence",
     "named": true
-  },
-  {
-    "type": "export",
-    "named": false
-  },
-  {
-    "type": "file",
-    "named": false
   },
   {
     "type": "float_literal",
@@ -29760,20 +35334,16 @@
     "named": true
   },
   {
-    "type": "init",
-    "named": false
-  },
-  {
     "type": "int_literal",
     "named": true
   },
   {
-    "type": "js",
-    "named": false
-  },
-  {
     "type": "keyword",
     "named": true
+  },
+  {
+    "type": "library",
+    "named": false
   },
   {
     "type": "library_path",
@@ -29812,10 +35382,6 @@
     "named": true
   },
   {
-    "type": "order",
-    "named": false
-  },
-  {
     "type": "pointer_type",
     "named": true
   },
@@ -29828,20 +35394,20 @@
     "named": true
   },
   {
+    "type": "punctuation",
+    "named": true
+  },
+  {
     "type": "selector",
+    "named": true
+  },
+  {
+    "type": "sentinel_declaration",
     "named": true
   },
   {
     "type": "slice_type",
     "named": true
-  },
-  {
-    "type": "tag",
-    "named": false
-  },
-  {
-    "type": "thread_local",
-    "named": false
   },
   {
     "type": "type_identifier",
