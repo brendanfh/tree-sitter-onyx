@@ -4780,21 +4780,34 @@
             "value": "keyword"
           },
           {
-            "type": "FIELD",
-            "name": "values",
-            "content": {
-              "type": "SYMBOL",
-              "name": "identifier_list"
-            }
-          },
-          {
-            "type": "ALIAS",
-            "content": {
-              "type": "STRING",
-              "value": "in"
-            },
-            "named": true,
-            "value": "keyword"
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "SEQ",
+                "members": [
+                  {
+                    "type": "FIELD",
+                    "name": "values",
+                    "content": {
+                      "type": "SYMBOL",
+                      "name": "identifier_list"
+                    }
+                  },
+                  {
+                    "type": "ALIAS",
+                    "content": {
+                      "type": "STRING",
+                      "value": "in"
+                    },
+                    "named": true,
+                    "value": "keyword"
+                  }
+                ]
+              },
+              {
+                "type": "BLANK"
+              }
+            ]
           },
           {
             "type": "FIELD",

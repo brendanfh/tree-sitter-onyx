@@ -805,8 +805,9 @@ module.exports = grammar({
       prec.right(
         seq(
           alias("for", $.keyword),
-          field("values", $.identifier_list),
-          alias("in", $.keyword),
+          optional(
+            seq(field("values", $.identifier_list), alias("in", $.keyword)),
+          ),
           field("iter", $._expression),
           field("body", $.block),
         ),
