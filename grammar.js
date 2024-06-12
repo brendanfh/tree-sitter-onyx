@@ -984,17 +984,17 @@ module.exports = grammar({
     unary_selector: ($) => seq(".", $.identifier),
 
     code_block: ($) =>
-      prec.right(
-        6,
+      prec.left(
+        30,
         seq(
-          choice(
-            seq("[", list(partial_terminator, optional($.identifier)), "]"),
-          ),
+          "[",
+          list(partial_terminator, optional($.identifier)),
+          "]",
           optional("\n"),
           choice(
             seq(alias($._curly_block, $.block)),
             seq("(", optional("\n"), $._expression, ")"),
-          ),
+          )
         ),
       ),
 
