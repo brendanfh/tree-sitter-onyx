@@ -4766,7 +4766,7 @@
     },
     "for_statement": {
       "type": "PREC_RIGHT",
-      "value": 0,
+      "value": 20,
       "content": {
         "type": "SEQ",
         "members": [
@@ -4785,6 +4785,23 @@
               {
                 "type": "SEQ",
                 "members": [
+                  {
+                    "type": "CHOICE",
+                    "members": [
+                      {
+                        "type": "ALIAS",
+                        "content": {
+                          "type": "STRING",
+                          "value": "&"
+                        },
+                        "named": true,
+                        "value": "punctuation"
+                      },
+                      {
+                        "type": "BLANK"
+                      }
+                    ]
+                  },
                   {
                     "type": "FIELD",
                     "name": "values",

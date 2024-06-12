@@ -803,10 +803,15 @@ module.exports = grammar({
 
     for_statement: ($) =>
       prec.right(
+        20,
         seq(
           alias("for", $.keyword),
           optional(
-            seq(field("values", $.identifier_list), alias("in", $.keyword)),
+            seq(
+              optional(alias("&", $.punctuation)),
+              field("values", $.identifier_list),
+              alias("in", $.keyword),
+            ),
           ),
           field("iter", $._expression),
           field("body", $.block),
