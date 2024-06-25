@@ -582,7 +582,7 @@ module.exports = grammar({
       ),
 
     parameter_list: ($) =>
-      prec.left(seq("(", list(",", field("parameter", $.parameter)), ")")),
+      prec.left(seq("(", list(partial_terminator, optional(field("parameter", $.parameter))), ")")),
 
     parameter: ($) =>
       prec.left(
@@ -671,8 +671,8 @@ module.exports = grammar({
           seq(
             "(",
             list(
-              partial_terminator,
-              optional(field("parameter", $.identifier)),
+              ",",
+              field("parameter", $.identifier),
             ),
             ")",
             "=>",
